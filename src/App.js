@@ -14,6 +14,11 @@ import FiveChords from "./chords/five";
 import Maj7Chords from "./chords/maj7";
 import Minor7Chords from "./chords/m7";
 import ChordSlideshow from "./chords/slideshow";
+import ScaleMemorize from "./scales/memorize";
+import MajorScales from "./scales/major";
+import MinorScales from "./scales/minor";
+import Dominant7Scales from "./scales/dominant7";
+import ScaleSlideshow from "./scales/slideshow";
 
 
 export default function App() {
@@ -43,6 +48,11 @@ export default function App() {
 
         {/* Scales Section */}
         <Route path="/scales" element={<Scales />} />
+        <Route path="/scales/memorize" element={<ScaleMemorize />} />
+        <Route path="/scales/memorize/major" element={<MajorScales />} />
+        <Route path="/scales/memorize/minor" element={<MinorScales />} />
+        <Route path="/scales/memorize/dominant7" element={<Dominant7Scales />} />
+        <Route path="/scales/slideshow" element={<ScaleSlideshow />} />
 
         {/* Fretboard Tools */}
         <Route path="/fretboard" element={<Fretboard />} />
